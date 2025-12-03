@@ -1,4 +1,3 @@
-import { Link as WaspRouterLink, routes } from "wasp/client/router";
 import { Button } from "../../client/components/ui/button";
 import openSaasBannerDark from "../../client/static/open-saas-banner-dark.svg";
 import openSaasBannerLight from "../../client/static/open-saas-banner-light.svg";
@@ -20,14 +19,14 @@ export default function Hero() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Button size="lg" variant="outline" asChild>
-                <WaspRouterLink to={routes.PricingPageRoute.to}>
+                <a href="#features">
                   Learn More
-                </WaspRouterLink>
+                </a>
               </Button>
               <Button size="lg" variant="default" asChild>
-                <WaspRouterLink to={routes.SignupRoute.to}>
+                <a href="#testimonials">
                   Get Started <span aria-hidden="true">→</span>
-                </WaspRouterLink>
+                </a>
               </Button>
             </div>
           </div>

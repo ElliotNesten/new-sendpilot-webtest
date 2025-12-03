@@ -1,5 +1,4 @@
 import { Moon, Sun } from "lucide-react";
-import { Label } from "../../client/components/ui/label";
 import useColorMode from "../hooks/useColorMode";
 import { cn } from "../utils";
 
@@ -9,7 +8,7 @@ const DarkModeSwitcher = () => {
 
   return (
     <div>
-      <Label
+      <label
         className={cn(
           "h-7.5 bg-muted relative m-0 block w-14 cursor-pointer rounded-full transition-colors duration-300 ease-in-out",
         )}
@@ -33,7 +32,7 @@ const DarkModeSwitcher = () => {
         >
           <ModeIcon isInLightMode={isInLightMode} />
         </span>
-      </Label>
+      </label>
     </div>
   );
 };
